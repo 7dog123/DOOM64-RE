@@ -134,7 +134,7 @@ PATH_INC	=	$(ROOT)/usr/include
 
 LCOPTS	=	-G 0
 LDFLAGS	=	-L$(ROOT)/usr/lib $(N64LIB)
-ASFLAGS	=	-non_shared -g -I$(PATH_PRINC) -I$(PATH_INC)
+ASFLAGS	=	-mno-shared -g -I$(PATH_PRINC) -I$(PATH_INC)
 
 ifeq ($(PLATFORM), BB)
 LCOPTS	+=	-mips2
